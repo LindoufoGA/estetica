@@ -97,6 +97,7 @@
   display: flex;
   gap: 30px ;
   justify-content: space-evenly;
+  flex-wrap: wrapm;
   margin-top: 3rem;
 }
 .item-servico {
@@ -201,7 +202,43 @@
   transition: opacity 0.5s ease;  /* Transição suave para o efeito de "fade-in" */
 }
 
-/* REDES */
+
+.footer {
+  display: flex;
+  gap: 10px;
+  justify-content: space-around;
+  align-items: center;
+  height: 300px;
+}
+
+.footer-bg {
+  background-color: #7d8c6d5b;
+}
+
+.footer img {
+  width: 200px;
+}
+
+.footer-itens img{
+  width: 32px;
+}
+
 .lista-redes {
   display: flex;
+  gap: 20px;
+}
+
+.endereco img {
+  width: 24px;
+}
+
+.item-endereco {
+  display: flex;
+  gap: 10px;
+  font-size: 14px;
+  align-items: center;
+}
+
+.item-endereco:first-child {
+  margin-bottom: 1rem;
 }
