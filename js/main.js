@@ -15,3 +15,17 @@ const gridFotos = document.querySelector('.grid-fotos');
             }, 200);  // Atraso para a transição suave
         }
     });
+
+    // BANNER
+    document.addEventListener("DOMContentLoaded", function() {
+        const images = document.querySelectorAll('.img-intro');
+        let currentImageIndex = 0;
+  
+        function showNextImage() {
+          images[currentImageIndex].classList.remove('active');
+          currentImageIndex = (currentImageIndex + 1) % images.length;
+          images[currentImageIndex].classList.add('active');
+        }
+  
+        setInterval(showNextImage, 5000); // Muda a cada 3 segundos (3000 milissegundos)
+      });
