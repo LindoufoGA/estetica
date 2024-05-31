@@ -1,58 +1,51 @@
 .header {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  padding: 15px 30px;
+  padding: 5px 10px;
   margin-bottom: 60px;
 }
-.header-bg {
-  background-color: #00000071;
-}
+
 .header img {
   width: 250px;
 }
 .menu {
   display: flex;
-  padding: 12px;
+  padding: 8px;
 }
 .menu li {
-  padding: 8px 16px;
+  padding: 8px;
+  margin-top: 1rem;
   margin-left: 8px;
   cursor: pointer;
   font-size: 16px;
   color: #fff;
+  background-color: #A68241;
+  border-radius: 8px;
 }
 .menu li:hover {
   background-color: #7D8C6D;
   border-radius: 8px;
   color: #fff;
 }
-.menu li:last-child {
-  background-color: #7D8C6D;
-  border-radius: 8px;
-  color: #fff;
-  transition: .3s;
-  margin-left: 2.5rem;
-}
-.menu li:last-child:hover {
-  transform: scale(1.1);
-}
+
 
 .banner {
   position: relative;
   width: 100%;
-  height: 120vh; 
+  height: 100vh; 
   overflow: hidden;
 }
 .img-intro {
   position: absolute;
-  top: -80px;
+  top: 0px;
   left: 0;
   width: 100%;
   height: 100%;
   opacity: 0;
   transition: opacity 0.5s ease;
 }
+
 .img-intro.active {
   opacity: 1;
 }
@@ -65,6 +58,8 @@
 }
 .intro {
   color: #bed4a5;
+  padding: 4rem 1rem;
+  font-size: .857rem;
 }
 .titulo-intro {
   margin-top: .3rem;
@@ -263,4 +258,93 @@
 
 .item-endereco:first-child {
   margin-bottom: 1rem;
+}
+
+@media(max-width:768px) {
+  .header img {
+    width: 150px;
+  }
+  .menu {
+    display: none;
+  }
+  #btn-mobile {
+    display: block;
+    width: 30px;
+    height: 4px;
+    background-color: #fff; 
+    border-radius: 8px;
+  }
+
+  #btn-mobile::before {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 4px;
+    background-color: #fff; 
+    border-radius: 8px;
+  }
+
+  .lista-servicos {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+  }
+  .item-servico img {
+    height: 150px;
+  }
+  .item-time {
+    flex-wrap: wrap;
+  }
+  .item-time img {
+    margin-bottom: 1rem;
+  }
+  .grid-fotos {
+    display: flex;
+    overflow-x: scroll;
+  }
+  .grid-fotos img {
+    width: 160px;
+    height: 80px;
+  }
+  .ambiente {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .footer {
+    flex-direction: column;
+    padding: 24px 0px;
+    height: 100%;
+  }
+  .footer-bg {
+    height: 100%;
+    padding: 32px
+  }
+  .item-endereco {
+    margin-bottom: 1rem;
+  }
+  .banner {
+    height: 100vh;
+  }
+  .footer .logo {
+    width: 200px;
+    margin-bottom: 2rem;
+  }
+
+  #ambiente .titulo,
+.time .titulo,
+.corporal .titulo,
+.facial .titulo {
+  padding-top: 1rem;
+  font-size: 1.5rem;
+}
+}
+
+@media(max-width:768px) {
+  .item-time img {
+    width: 100%;
+  }
+  .img-selecionada {
+    border-radius: 0px;
+  }
 }

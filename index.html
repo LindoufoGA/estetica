@@ -13,17 +13,20 @@
 </head>
 
 <body>
+
   <div class="banner">
 
     <div class="img-bg">
       <div class="img-intro active">
-        <img src="img/Imagens para landing/banner.png" alt="">
+        <img src="img/1.png" alt="">
+        <button class="btn btn-banner1">FALE CONOSCO</button>
       </div>
       <div class="img-intro">
-        <img src="img/Imagens para landing/banner1.png" alt="">
+        <img src="img/2.png" alt="">
       </div>
       <div class="img-intro">
-        <img src="img/Imagens para landing/banner2.png" alt="">
+        <img src="img/3.png " alt="">
+        <button class="btn">FALE CONOSCO</button>
       </div>
     </div>
 
@@ -33,32 +36,36 @@
         <header class="container">
           <div class="header">
             <div>
-              <img src="img/logo2.png" alt="">
+              <!-- <img src="img/logo2.png" alt=""> -->
             </div>
-            <ul class="menu">
-              <li>Home</li>
-              <li>Serviços</li>
-              <li>Nosso time</li>
-              <li>Nosso Ambiente</li>
-              <li><a href="https://calendly.com/clinicavenesse/avaliacao" target="_blank">
-                  AGENDE UMA CONSULTA
-                </a></li>
+            <span id="btn-mobile" onclick="toggleMenu()">
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+            </span>
 
+            <ul class="menu" id="menu">
+              <a href="index.html">
+                <li>Home</li>
+              </a>
+              <a href="#servicos">
+                <li>Serviços</li>
+              </a>
+              <a href="#time">
+                <li>Nosso time</li>
+              </a>
+              <a href="#ambiente">
+                <li>Nosso Ambiente</li>
+              </a>
+              <!-- <li><a href="https://calendly.com/clinicavenesse/avaliacao" target="_blank">
+                  AGENDE UMA CONSULTA
+                </a></li> -->
             </ul>
           </div>
       </div>
-      <div class="container intro">
-        <span> HARMONIZAÇÃO FACIAL</span>
-        <h1 class="titulo-intro">Evidencie ainda mais a sua beleza.</h1>
-        <p class="descricao-intro">Com a Venésse, você tem as melhores técnicas na área de
-          harmonização facial de uma forma equilibrada e natural.</p>
-        <button class="btn"><a href="https://calendly.com/clinicavenesse/avaliacao" target="_blank">FAÇA UM AGENDAMENTO</a>
-        </button>
-      </div>
-    </div>
 
-    </header>
-  </div>
+      </header>
+    </div>
   </div>
 
   <article class="facial">
@@ -239,7 +246,7 @@
   <footer class="footer-bg">
     <div class="footer container">
       <div>
-        <img src="img/logo2.png" alt="">
+        <img class="logo" src="img/logo2.png" alt="">
         <ul>
           <li>
             <a href=""></a>
@@ -266,6 +273,7 @@
         <ul>
           <li class="item-endereco">
             <img src="img/icons/icons8-whatsapp-32.png" alt="">
+            <span>11-9999-9999</span>
           </li>
           <li class="item-endereco">
             <img src="img/icons/icons8-relógio-32.png" alt="">
